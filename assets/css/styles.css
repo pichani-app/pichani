@@ -369,6 +369,54 @@ footer {
     }
 }
 
+/* Mobile navigation */
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 9px;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 2px;
+    background: var(--primary);
+}
+
+@media (max-width: 600px) {
+    .nav-container { position: relative; }
+    .menu-toggle { display: block; }
+    .nav-links.is-open {
+        position: absolute;
+        top: calc(100% + 14px);
+        right: 0;
+        z-index: 110;
+        display: flex;
+        width: min(260px, calc(100vw - 4rem));
+        padding: .75rem;
+        flex-direction: column;
+        gap: 0;
+        border: 1px solid var(--secondary);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, .98);
+        box-shadow: var(--shadow);
+    }
+    .nav-links.is-open a {
+        display: block;
+        padding: .8rem 1rem;
+        border-radius: 8px;
+    }
+    .nav-links.is-open a:hover,
+    .nav-links.is-open a.active { background: var(--warning); }
+}
+
 /* Print Styles */
 @media print {
     header, footer, aside, .btn, .hero .badge {
