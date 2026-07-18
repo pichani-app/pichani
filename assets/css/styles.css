@@ -59,12 +59,17 @@ header {
     top: 0;
     z-index: 100;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
 }
 
-nav.nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
