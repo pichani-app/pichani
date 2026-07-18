@@ -395,18 +395,23 @@ footer {
     .menu-toggle { display: block; }
     .nav-links.is-open {
         position: absolute;
-        top: calc(100% + 14px);
+        top: calc(100% + 14px + 1rem);
+        left: 50%;
+        transform: translate(-50%, 0);
         right: 0;
         z-index: 110;
         display: flex;
         width: min(260px, calc(100vw - 4rem));
         padding: .75rem;
         flex-direction: column;
-        gap: 0;
+        gap: 0.5rem;
         border: 1px solid var(--secondary);
         border-radius: 12px;
         background: rgba(255, 255, 255, .98);
         box-shadow: var(--shadow);
+        width: 90%;
+        height: 30rem;
+
     }
     .nav-links.is-open a {
         display: block;
@@ -414,7 +419,9 @@ footer {
         border-radius: 8px;
     }
     .nav-links.is-open a:hover,
-    .nav-links.is-open a.active { background: var(--warning); }
+    .nav-links.is-open a.active {
+        background: var(--warning);
+    }
 }
 
 /* Print Styles */
