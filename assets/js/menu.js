@@ -13,4 +13,12 @@ document.querySelectorAll('.menu-toggle').forEach((button) => {
       button.setAttribute('aria-expanded', 'false');
     });
   });
+
+  document.addEventListener('click', (event) => {
+    if (!menu.classList.contains('is-open')) return;
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+      menu.classList.remove('is-open');
+      button.setAttribute('aria-expanded', 'false');
+    }
+  });
 });
