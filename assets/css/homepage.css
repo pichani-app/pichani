@@ -1748,9 +1748,8 @@
 }
 
 .ticket-icon{
-	border:2px dashed #536ac4;
+	border:2px dashed black;
 	border-radius:4px;
-	color:#536ac4;
 	transform:rotate(5deg);
 }
 
