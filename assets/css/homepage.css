@@ -975,11 +975,7 @@
     }
 
     .memory-wall{
-        width:550px;
-        max-width:100%;
-        height:480px;
-        margin:60px auto 0;
-        justify-self:center;
+		display: none;
     }
 
     .photo-a{
