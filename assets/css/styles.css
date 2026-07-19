@@ -80,12 +80,12 @@ header {
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .logo-name {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
@@ -97,19 +97,20 @@ header {
     flex-shrink: 0;
 }
 
-.nav-links {
+.container.nav-container .nav-links {
     display: flex;
     gap: 2rem;
 }
 
-.nav-links a {
-    font-weight: 500;
+.container.nav-container .nav-links a {
+    font-weight: 500 !important;
     font-size: 0.9rem;
-    gap:clamp(16px,2.2vw,34px);
     color: var(--text-muted);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
 }
 
-.nav-links a.active {
+.container.nav-container .nav-links a.active {
     color: var(--primary);
 }
 
@@ -377,7 +378,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .nav-links {
+    .container.nav-container .nav-links {
         display: none;
     }
     article.content {
@@ -409,7 +410,7 @@ footer {
 @media (max-width: 600px) {
     .nav-container { position: relative; }
     .menu-toggle { display: block; }
-    .nav-links.is-open {
+    .container.nav-container .nav-links.is-open {
         position: absolute;
         top: calc(100% + 14px + 1rem);
         left: 50%;
@@ -429,13 +430,13 @@ footer {
         height: 30rem;
 
     }
-    .nav-links.is-open a {
+    .container.nav-container .nav-links.is-open a {
         display: block;
         padding: .8rem 1rem;
         border-radius: 8px;
     }
-    .nav-links.is-open a:hover,
-    .nav-links.is-open a.active {
+    .container.nav-container .nav-links.is-open a:hover,
+    .container.nav-container .nav-links.is-open a.active {
         background: var(--warning);
     }
 }
