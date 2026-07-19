@@ -395,17 +395,6 @@ a {
 	background:#87a2ff;
 }
 
-.wall-note{
-	position:absolute;
-	z-index:2;
-	padding:8px 12px;
-	background:white;
-	font-size:12px;
-	font-weight:700;
-	letter-spacing:.1px;
-	box-shadow:0 7px 20px rgba(42,55,106,.12);
-}
-
 .note-top{
 	right:0;
 	top:245px;
@@ -1091,11 +1080,6 @@ transform:rotate(45deg)
         width:108px;
         height:135px;
         bottom:23px;
-    }
-
-    .wall-note{
-        font-size:9px;
-        padding:6px;
     }
 
     .note-top{
