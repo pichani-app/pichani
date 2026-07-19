@@ -80,7 +80,15 @@ header {
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.logo svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .nav-links {
@@ -91,6 +99,7 @@ header {
 .nav-links a {
     font-weight: 500;
     font-size: 0.9rem;
+    gap:clamp(16px,2.2vw,34px);
     color: var(--text-muted);
 }
 
