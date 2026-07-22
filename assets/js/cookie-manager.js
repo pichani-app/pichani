@@ -26,7 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Load saved settings if they exist
-        const savedSettings = JSON.parse(localStorage.getItem('cookie_preferences'));
+        let savedSettings = null;
+        try {
+            savedSettings = JSON.parse(localStorage.getItem('cookie_preferences'));
+        } catch (error) {
+            localStorage.removeItem('cookie_preferences');
+        }
         if (savedSettings) {
             if (document.getElementById('cookie-performance')) 
                 document.getElementById('cookie-performance').checked = savedSettings.performance;
