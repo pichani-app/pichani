@@ -466,23 +466,6 @@ h1,h2,h3,p {
 	grid-column:2;
 }
 
-.scribble,.spark{
-	position:absolute;
-	right:18px;
-	bottom:8px;
-	font-size:80px;
-	color:#fff;
-	line-height:1;
-	opacity:.65;
-}
-
-.spark{
-	font-size:55px;
-	bottom:17px;
-	right:24px;
-	color:#596fc8;
-}
-
 .features{
 	background:var(--ink);
 	padding:120px clamp(24px,7vw,112px);
@@ -520,7 +503,7 @@ h1,h2,h3,p {
 	position:absolute;
 	width:130px;
 	height:48px;
-	border-bottom:3px solid var(--blue);
+	border-bottom:px solid var(--blue);
 	border-radius:50%;
 	transform:rotate(-16deg);
 	left:38px;
@@ -1091,9 +1074,7 @@ h1,h2,h3,p {
 
 /* Homepage refinement: clearer, more editorial surfaces */
 .hero{
-	min-height:780px;
 	background:#fff;
-	border-bottom:1px solid #e4e9f7;
 }
 
 .hero-copy{
@@ -1615,14 +1596,11 @@ h1,h2,h3,p {
 	transform:rotate(-18deg);
 }
 
-.field-note{display:flex;
+.field-note{
+	display:flex;
 	gap:13px;
 	align-items:flex-start;
 	border-right:1px solid #dbe4fa;
-}
-
-.field-note:last-child{
-	border:0;
 }
 
 .field-note b{
@@ -1920,10 +1898,6 @@ h1,h2,h3,p {
 	border-bottom:1px solid #dbe4fa;
 }
 
-.field-note:last-child{
-	border-bottom:0;
-}
-
 .field-notes-title{
 	grid-column:auto;
 }
@@ -2047,14 +2021,6 @@ h1,h2,h3,p {
 	color:#354263;
 	font-size:14px;
 	line-height:1.55;
-}
-
-.earning-doodle{
-	position:absolute;
-	right:18px;
-	bottom:8px;
-	font:72px/1 cursive;
-	color:rgba(255,255,255,.7);transform:rotate(-15deg);
 }
 
 .contributor-earnings{display:grid;
