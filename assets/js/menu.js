@@ -21,4 +21,11 @@ document.querySelectorAll('.menu-toggle').forEach((button) => {
       button.setAttribute('aria-expanded', 'false');
     }
   });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !menu.classList.contains('is-open')) return;
+    menu.classList.remove('is-open');
+    button.setAttribute('aria-expanded', 'false');
+    button.focus();
+  });
 });
