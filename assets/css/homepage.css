@@ -113,15 +113,13 @@ h1, h2 { font-weight: 700; }
 .demo-capture img { display: block; width: 100%; height: 285px; object-fit: cover; object-position: top; border-top: 1px solid #e4e9f6; }
 .demo-capture.mobile { display: none; }
 
-.discover-cta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(270px, .58fr); gap: clamp(42px, 9vw, 140px); align-items: center; padding: 100px max(30px, calc((100vw - 1180px) / 2)); background: #17203e; }
-.discover-cta h2 { margin: 0; color: #fff; font-size: clamp(32px, 3.7vw, 52px); line-height: 1.08; letter-spacing: -2.3px; }
-.discover-cta-copy > p:last-child { max-width: 525px; margin: 20px 0 0; color: #c8d2ee; font-size: 16px; line-height: 1.65; }
-.discover-cta .eyebrow { color: #87a2ff; }
-.discover-cta-action { padding: 29px; border: 1px solid rgba(196, 215, 255, .34); border-radius: 9px; background: #25345f; }
-.discover-marker { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #8194df; border-radius: 50%; color: #ffd7c4; font-size: 17px; font-weight: 700; }
-.discover-cta-action p { margin: 22px 0 21px; color: #d4dcf1; font-size: 13px; line-height: 1.55; }
-.discover-button { width: 100%; min-width: 0; background: #fff; color: #17203e; }
-.discover-button:hover { background: #ffd7c4; color: #17203e; }
+.discover-cta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(270px, .58fr); gap: clamp(42px, 9vw, 140px); align-items: center; padding: 100px max(30px, calc((100vw - 1180px) / 2)); background: var(--paper); }
+.discover-cta h2 { margin: 0; color: var(--ink); font-size: clamp(32px, 3.7vw, 52px); line-height: 1.08; letter-spacing: -2.3px; }
+.discover-cta-copy > p:last-child { max-width: 525px; margin: 20px 0 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
+.discover-cta-action { padding: 29px; border: 1px solid #d9e1f3; border-radius: 9px; background: #fff; box-shadow: 0 12px 28px rgba(37,51,99,.07); }
+.discover-marker { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #c6d0ec; border-radius: 50%; color: #536ac4; font-size: 17px; font-weight: 700; }
+.discover-cta-action p { margin: 22px 0 21px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.discover-button { width: 100%; min-width: 0; }
 
 .closing-cta { display: flex; justify-content: space-between; align-items: end; gap: 42px; padding: 87px max(30px, calc((100vw - 1180px) / 2)); background: var(--peach); }
 .closing-cta h2 { margin: 0; font: 700 clamp(34px, 3.8vw, 53px)/1.08 "Poppins", sans-serif; letter-spacing: -2.4px; }
