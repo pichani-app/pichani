@@ -3,7 +3,7 @@
 	padding:0;
 	border:0;
 	text-align:initial;
-	color:#17203e;
+	color:#353535;
 	font-family:"Poppins",Arial,sans-serif
 }
 
@@ -24,7 +24,7 @@
 	margin:0 0 18px;
 	font:700 20px/1.1 "Poppins",Arial,sans-serif;
 	letter-spacing:-.5px;
-	color:#17203e
+	color:#353535
 }
 
 .footer-column p{
@@ -34,7 +34,7 @@
 .newsletter-copy{
 	max-width:320px;
 	line-height:1.55;
-	color:#354263
+	color:#575757
 }
 
 .footer-signup{
@@ -51,7 +51,7 @@
 	border:1px solid rgba(83,106,196,.35);
 	border-radius:9px;
 	background:#fff;
-	color:#17203e;
+	color:#353535;
 	font:inherit;
 	outline:none
 }
@@ -88,7 +88,7 @@
 }
 
 .footer-links a{
-	color:#354263;
+	color:#575757;
 	text-decoration:none;
 	font-size:14px
 }
@@ -101,12 +101,12 @@
 .contact-line{
 	margin:0 0 10px!important;
 	font-size:14px;
-	color:#354263
+	color:#575757
 }
 
 .contact-line strong{
 	text-transform:lowercase;
-	color:#17203e
+	color:#353535
 }
 
 .social-links{
@@ -140,7 +140,7 @@
 .footer-bottom{
 	background:#87a2ff;
 	padding:22px 0;
-	color:#17203e;
+	color:#353535;
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -165,7 +165,7 @@
 
 .footer-credit{
 	font-weight:700;
-	color:#17203e;
+	color:#353535;
 	text-decoration:none
 }
 
