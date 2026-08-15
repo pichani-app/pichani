@@ -4,7 +4,7 @@
 	border:0;
 	text-align:initial;
 	color:#17203e;
-	font-family:"Hanken Grotesk",Arial,sans-serif
+	font-family:"Poppins",Arial,sans-serif
 }
 
 .footer-main{
@@ -22,7 +22,7 @@
 
 .footer-column h3{
 	margin:0 0 18px;
-	font:700 20px/1.1 "Hanken Grotesk",Arial,sans-serif;
+	font:700 20px/1.1 "Poppins",Arial,sans-serif;
 	letter-spacing:-.5px;
 	color:#17203e
 }
@@ -67,7 +67,7 @@
 	border-radius:9px;
 	background:#17203e;
 	color:white;
-	font:700 13px/1 "Hanken Grotesk",Arial,sans-serif;
+	font:700 13px/1 "Poppins",Arial,sans-serif;
 	cursor:pointer
 }
 
