@@ -8,7 +8,7 @@
 }
 
 .footer-main{
-	padding:64px 0 56px;
+	padding:72px 0 62px;
 	background:#c4d7ff
 }
 
@@ -21,9 +21,9 @@
 }
 
 .footer-column h3{
-	margin:0 0 18px;
+	margin:0 0 20px;
 	font:700 20px/1.1 "Poppins",Arial,sans-serif;
-	letter-spacing:-.5px;
+	letter-spacing:-.65px;
 	color:#353535
 }
 
@@ -33,7 +33,8 @@
 
 .newsletter-copy{
 	max-width:320px;
-	line-height:1.55;
+	font-size:14px;
+	line-height:1.65;
 	color:#575757
 }
 
@@ -47,9 +48,9 @@
 .footer-signup input{
 	min-width:0;
 	flex:1;
-	padding:12px 13px;
+	padding:13px 14px;
 	border:1px solid rgba(83,106,196,.35);
-	border-radius:9px;
+	border-radius:8px;
 	background:#fff;
 	color:#353535;
 	font:inherit;
@@ -62,17 +63,20 @@
 }
 
 .footer-signup button{
-	padding:11px 15px;
+	padding:12px 16px;
 	border:0;
-	border-radius:9px;
+	border-radius:8px;
 	background:#17203e;
 	color:white;
 	font:700 13px/1 "Poppins",Arial,sans-serif;
-	cursor:pointer
+	cursor:pointer;
+	transition:transform .18s ease,background .18s ease,box-shadow .18s ease
 }
 
 .footer-signup button:hover{
-	background:#536ac4
+	background:#536ac4;
+	box-shadow:0 6px 14px rgba(41,42,51,.16);
+	transform:translateY(-1px)
 }
 
 .footer-note{
@@ -84,18 +88,19 @@
 
 .footer-links{
 	display:grid;
-	gap:12px
+	gap:13px
 }
 
 .footer-links a{
 	color:#575757;
 	text-decoration:none;
-	font-size:14px
+	font-size:14px;
+	transition:color .18s ease,transform .18s ease
 }
 
 .footer-links a:hover{
 	color:#536ac4;
-	text-decoration:underline
+	transform:translateX(3px)
 }
 
 .contact-line{
@@ -129,10 +134,11 @@
 	text-decoration:none;
 	font-size:12px;
 	font-weight:700;
-	transition:transform .2s,background .2s
+	transition:transform .2s,background .2s,border-color .2s
 }
 
 .social-links a:hover{
+	border-color:#536ac4;
 	background:#fff4b5;
 	transform:translateY(-3px)
 }
